@@ -2,7 +2,7 @@
 # Adds notmuch to the PYTHONPATH and LD_LIBRARY_PATH at runtime to avoid the
 # following errors:
 #
-# pkg_resources.DistributionNotFound: The 'notmuch'distribution was not found
+# pkg_resources.DistributionNotFound: The 'notmuch' distribution was not found
 # and is required by afew
 #
 # ImportError: Could not find shared 'notmuch' library.
@@ -12,7 +12,7 @@ class Afew < Formula
   head "https://github.com/teythoon/afew.git"
 
   depends_on :python if MacOS.version <= :snow_leopard
-  depends_on "notmuch" => :run
+  depends_on "notmuch"
   depends_on "dbacl"
   depends_on "emacs" => :optional
 
