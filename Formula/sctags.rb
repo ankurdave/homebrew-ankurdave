@@ -4,7 +4,7 @@ class Sctags < Formula
   head 'https://github.com/ankurdave/sctags.git'
   def install
     system './sbt -batch assembly'
-    bin.install 'target/scala-2.11/sctags'
+    bin.install 'target/scala-2.12/sctags'
   end
 
   test do
